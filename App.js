@@ -8,6 +8,7 @@ import ExampleComponent from "./src/screens/ExampleComponent";
 import HomeScreen from "./src/screens/HomeScreen";
 import ImageScreen from "./src/screens/ImageScreen";
 import ListScreen from "./src/screens/ListScreen";
+import SignInScreen from "./src/screens/SignInScreen";
 import SquareScreen from "./src/screens/SquareScreen";
 import TextScreen from "./src/screens/TextScreen";
 
@@ -22,7 +23,8 @@ const navigator = createStackNavigator(
     CounterScreen : CounterScreen,
     ImageScreen : ImageScreen,
     TextScreen : TextScreen,
-    Box : BoxScreen
+    Box : BoxScreen,
+    SignIn : SignInScreen
   },
   {
     initialRouteName: "Home",
