@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View,Image,StyleSheet,useWindowDimensions } from 'react-native';
+import { View,Image,StyleSheet,useWindowDimensions} from 'react-native';
 import Logo from '../../assets/trakya-universitesi-logo.png';
 import CustomInput from '../components/CustomInput';
 import CustomButton from '../components/CustomButton';
@@ -12,6 +12,9 @@ const onSignInPressed =()=>{
 }
 const onForgotPassword =()=>{
     console.warn("onForgotPasswordPressed")
+}
+const onSingUpPressed =()=>{
+    console.warn("onSignUpPressed")
 }
 
 const {height} = useWindowDimensions();
@@ -42,6 +45,11 @@ const {height} = useWindowDimensions();
             <CustomButton
              text="Forgot Password?"
              onPress={onForgotPassword}
+             type="TERTIARY"
+            />
+            <CustomButton
+             text="Don't have an account? Create One"
+             onPress={onSingUpPressed}
              type="TERTIARY"
             />
         </View>
